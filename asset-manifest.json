@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/prime-film/static/css/main.27732c41.css",
-    "main.js": "/prime-film/static/js/main.b142853e.js",
+    "main.css": "/prime-film/static/css/main.e5cb7a2c.css",
+    "main.js": "/prime-film/static/js/main.33f6881b.js",
     "index.html": "/prime-film/index.html",
     "static/media/search.svg": "/prime-film/static/media/search.b416605642fcb3f2447edc96c1a80e05.svg",
-    "main.27732c41.css.map": "/prime-film/static/css/main.27732c41.css.map",
-    "main.b142853e.js.map": "/prime-film/static/js/main.b142853e.js.map"
+    "main.e5cb7a2c.css.map": "/prime-film/static/css/main.e5cb7a2c.css.map",
+    "main.33f6881b.js.map": "/prime-film/static/js/main.33f6881b.js.map"
   },
   "entrypoints": [
-    "static/css/main.27732c41.css",
-    "static/js/main.b142853e.js"
+    "static/css/main.e5cb7a2c.css",
+    "static/js/main.33f6881b.js"
   ]
 }
