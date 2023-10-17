@@ -6,7 +6,7 @@ import MovieCard from "./MovieCard"
 const API_key = 'http://www.omdbapi.com/?i=tt3896198&apikey=d6d0ba1'
 
 const App = () => {
-  let [movies, setMovies] = useState([])
+  let [movies, setMovies] = useState([API_key])
   let [searchTerm, setSearchTerm] = useState("")
 
   const searchMovies = async (title) => {
@@ -50,7 +50,7 @@ const App = () => {
             </div>
           ) :
           (
-            <div className="empty">
+            <div className="default">
               <h2><u>No movies Found!</u></h2>
             </div>
           )
