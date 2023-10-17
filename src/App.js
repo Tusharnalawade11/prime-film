@@ -3,7 +3,7 @@ import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from "./MovieCard"
 
-const API_key = 'http://www.omdbapi.com/?i=tt3896198&apikey=d6d0ba1'
+const API_key = 'https://www.omdbapi.com/?i=tt3896198&apikey=d6d0ba1'
 
 const App = () => {
   let [movies, setMovies] = useState([API_key])
