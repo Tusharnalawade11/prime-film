@@ -3,22 +3,22 @@ import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from "./MovieCard"
 
-const API_key = 'https://www.omdbapi.com/?i=tt3896198&apikey=d6d0ba1'
+const API_key = 'http://www.omdbapi.com/?i=tt3896198&apikey=d6d0ba1'
 
 const App = () => {
-  let [movies, setMovies] = useState([API_key])
+  let [movies, setMovies] = useState([])
   let [searchTerm, setSearchTerm] = useState("")
 
   const searchMovies = async (title) => {
     const response = await fetch(`${API_key}&s=${title}`)
     const data = await response.json();
-    // console.log(data)
+    // console.log(data.Search(300))
 
     setMovies(data.Search)
   }
 
   useEffect(() => {
-    searchMovies("All")
+
   }, [])
 
 
