@@ -3,6 +3,7 @@ import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from "./MovieCard"
 
+
 const API_key = 'http://www.omdbapi.com/?i=tt3896198&apikey=d6d0ba1'
 
 const App = () => {
@@ -12,13 +13,12 @@ const App = () => {
   const searchMovies = async (title) => {
     const response = await fetch(`${API_key}&s=${title}`)
     const data = await response.json();
-    // console.log(data.Search(300))
+    console.log(data.Search)
 
     setMovies(data.Search)
   }
 
   useEffect(() => {
-
   }, [])
 
 
@@ -41,17 +41,23 @@ const App = () => {
       </div>
 
       {
-        movies.length > 0
+        movies && movies.length > 0
           ? (
             <div className="container">
               {movies.map((movie) => (
                 <MovieCard key={movie.imdbID} movie={movie} />
               ))}
             </div>
+          ) : !movies
+          ? (
+            <div className="empty">
+              <h2><u>No movies found for this term</u></h2>
+            </div>
           ) :
           (
             <div className="default">
-              <h2><u>No movies Found!</u></h2>
+              <h2>Welcome to PrimeFilm Play</h2>
+              <p>Search for your favorite movies above!</p>
             </div>
           )
       }
